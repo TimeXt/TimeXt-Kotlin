@@ -1,12 +1,12 @@
-# TimeXt-Kotlin - develop branch
+# TimeXt-Kotlin - master branch
 
 [![Platform](https://img.shields.io/badge/platform-Android-blue.svg)](https://www.android.com)
 <a target="_blank" href="https://android-arsenal.com/api?level=14" title="API14+"><img src="https://img.shields.io/badge/API-14+-blue.svg" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <a target="_blank" href="https://www.paypal.me/GuepardoApps" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-Kotlin/blob/develop/releases/lib-2018-10-20-1.aar)
-[![Version](https://img.shields.io/badge/version-v0.1.0.181020-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/develop/releases/)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-Kotlin/blob/master/releases/lib-2018-10-20-1.aar)
+[![Version](https://img.shields.io/badge/version-v0.1.0.181020-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/releases/)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -109,4 +109,4 @@ val daysInYear = 365.days.inYears
 
 ## License
 
-TimeXt-Kotlin is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/TimeXt-Kotlin/blob/develop/LICENSE.md) for details.
+TimeXt-Kotlin is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/TimeXt-Kotlin/blob/master/LICENSE.md) for details.
