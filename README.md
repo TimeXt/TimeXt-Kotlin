@@ -6,8 +6,8 @@
 <a target="_blank" href="https://www.paypal.me/GuepardoApps" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
 
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
 [![Version](https://img.shields.io/badge/version-v0.2.0.181028-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.2.0)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
 [![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-orange.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
@@ -122,6 +122,36 @@ val oneYear = 1.years
 val daysInYear = 365.days.inYears
 val yearsFromDays = 365.days.toYears()
 
+```
+
+## Installation
+
+Add the JitPack repository to your `build.gradle`:
+
+```groovy
+allprojects {
+ repositories {
+    maven { url "https://jitpack.io" }
+    }
+}
+```
+
+Add the dependency to your `build.gradle`:
+
+- For **non-Android** projects:
+
+```groovy
+dependencies {
+    implementation 'com.github.TimeXt:TimeXt-Kotlin:0.2.0'
+}
+```
+
+- For **Android** projects:
+
+```groovy
+dependencies {
+    implementation 'com.github.TimeXt:TimeXt-Android-Kotlin:0.2.0'
+}
 ```
 
 ## Requirements
