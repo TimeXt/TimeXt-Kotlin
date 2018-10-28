@@ -16,32 +16,32 @@ class CalendarTests {
 
         val actual = calendar + 1.hours
 
-        assertTrue(actual.timeInMillis == expected.timeInMillis)
+        assertEquals(expected.timeInMillis, actual.timeInMillis)
     }
 
     @Test
     fun `Minus TimeXt operator should work as expected`() {
         val calendar = Calendar.getInstance()
-        calendar.set(2018, 10, 28, 11, 18, 0)
+        calendar.set(2018, 10, 28)
 
         val expected = Calendar.getInstance()
-        expected.set(2017, 10, 28, 11, 18, 0)
+        expected.set(2018, 10, 14)
 
-        val actual = calendar - 1.years
+        val actual = calendar - 2.weeks
 
-        assertTrue(actual.timeInMillis == expected.timeInMillis)
+        assertEquals(expected.timeInMillis.toDouble(), actual.timeInMillis.toDouble(), 2.0)
     }
 
     @Test
     fun `Minus Calendar operator should work as expected`() {
         val calendar1 = Calendar.getInstance()
-        calendar1.set(2018, 10, 28, 11, 18, 0)
+        calendar1.set(2018, 10, 28)
 
         val calendar2 = Calendar.getInstance()
-        calendar2.set(2018, 10, 21, 11, 18, 0)
+        calendar2.set(2018, 10, 21)
 
         val actual = calendar1 - calendar2
 
-        assertTrue(actual.value == 1.weeks.inMilliseconds)
+        assertEquals(1.weeks.inMilliseconds, actual.value, 1.0)
     }
 }

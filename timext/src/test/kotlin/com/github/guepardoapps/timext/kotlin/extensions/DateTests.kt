@@ -14,7 +14,7 @@ class DateTests {
 
         val actual = date + oneHour
 
-        assertTrue(actual.time == expected.time)
+        assertEquals(expected.time, actual.time)
     }
 
     @Test
@@ -26,7 +26,7 @@ class DateTests {
 
         val actual = date - oneHour
 
-        assertTrue(actual.time == expected.time)
+        assertEquals(expected.time, actual.time)
     }
 
     @Test
@@ -38,7 +38,7 @@ class DateTests {
 
         val expected = 1.hours
 
-        assertTrue(actual.value == expected.value)
+        assertEquals(expected.inMilliseconds, actual.value, 1.0)
     }
 
     @Test
@@ -50,7 +50,7 @@ class DateTests {
 
         val actual = date + oneHour
 
-        assertTrue(actual.time == expected.time)
+        assertEquals(expected.time, actual.time)
     }
 
     @Test
@@ -62,7 +62,7 @@ class DateTests {
 
         val actual = date - oneHour
 
-        assertTrue(actual.time == expected.time)
+        assertEquals(expected.time, actual.time)
     }
 
     @Test
@@ -74,6 +74,6 @@ class DateTests {
 
         val expected = 1.hours
 
-        assertTrue(actual.value == expected.value)
+        assertEquals(expected.inMilliseconds, actual.value, 1.0)
     }
 }

@@ -1,8 +1,6 @@
 package com.github.guepardoapps.timext.kotlin
 
 object TimeXtUnit {
-    val year: Double = 365 * 24 * 60 * 60 * 1e3
-
     val week: Double = 7 * 24 * 60 * 60 * 1e3
 
     val day: Double = 24 * 60 * 60 * 1e3

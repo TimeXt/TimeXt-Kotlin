@@ -3,9 +3,6 @@ package com.github.guepardoapps.timext.kotlin.extensions
 import com.github.guepardoapps.timext.kotlin.TimeXt
 import com.github.guepardoapps.timext.kotlin.TimeXtUnit
 
-val Number.years: TimeXt
-    get() = TimeXt(this.toDouble(), TimeXtUnit.year)
-
 val Number.weeks: TimeXt
     get() = TimeXt(this.toDouble(), TimeXtUnit.week)
 
