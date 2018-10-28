@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="define_TimeXt"></string>
+    <string name="library_TimeXt_author">Jonas Schubert</string>
+    <string name="library_TimeXt_authorWebsite">https://guepardoapps.github.io//projects/</string>
+    <string name="library_TimeXt_libraryName">TimeXt</string>
+    <string name="library_TimeXt_libraryDescription">TimeXt is a library to handle time easily</string>
+    <string name="library_TimeXt_libraryVersion">0.2.0.181028</string>
+    <string name="library_TimeXt_libraryWebsite">https://github.com/TimeXt/TimeXt-Kotlin/</string>
+    <string name="library_TimeXt_licenseId">mit</string>
+    <string name="library_TimeXt_isOpenSource">true</string>
+    <string name="library_TimeXt_repositoryLink">https://github.com/TimeXt/TimeXt-Kotlin/</string>
+</resources>
