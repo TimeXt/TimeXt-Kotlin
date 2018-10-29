@@ -142,7 +142,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt:TimeXt-Kotlin:0.2.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:v0.2.0'
 }
 ```
 
@@ -150,7 +150,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt:TimeXt-Android-Kotlin:0.2.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:v0.2.0'
 }
 ```
 
