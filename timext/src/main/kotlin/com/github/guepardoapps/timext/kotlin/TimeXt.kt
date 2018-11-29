@@ -1,6 +1,6 @@
 package com.github.guepardoapps.timext.kotlin
 
-class TimeXt(var value: Double, var unit: Double) {
+class TimeXt(var value: Double, private var unit: Double) {
 
     val inWeeks: Double
         get() = this.value * this.unit / TimeXtUnit.week

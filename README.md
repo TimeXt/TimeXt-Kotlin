@@ -6,9 +6,11 @@
 <a target="_blank" href="https://www.paypal.me/GuepardoApps" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
 
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
-[![Version](https://img.shields.io/badge/version-v0.2.0.181028-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.2.0)
+[![Version](https://img.shields.io/badge/version-v0.3.1.181129-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.3.1)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
 [![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-orange.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -142,7 +144,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:v0.2.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:v0.3.1'
 }
 ```
 
@@ -150,7 +152,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:v0.2.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:v0.3.1'
 }
 ```
 
@@ -160,4 +162,4 @@ dependencies {
 
 ## License
 
-TimeXt-Kotlin is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/TimeXt-Kotlin/blob/master/LICENSE.md) for details.
+TimeXt-Kotlin is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
