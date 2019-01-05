@@ -7,8 +7,8 @@
 
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
 [![Version](https://img.shields.io/badge/version-v0.3.1.181129-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.3.1)
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
-[![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-orange.svg)](https://github.com/TimeXt/TimeXt-Kotlin/tree/master/)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
+[![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-orange.svg)](timext)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
