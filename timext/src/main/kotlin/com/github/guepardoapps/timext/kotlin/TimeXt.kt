@@ -2,6 +2,9 @@ package com.github.guepardoapps.timext.kotlin
 
 class TimeXt(var value: Double, private var unit: Double) {
 
+    val inYears: Double
+        get() = this.value * this.unit / TimeXtUnit.year
+
     val inWeeks: Double
         get() = this.value * this.unit / TimeXtUnit.week
 
@@ -19,6 +22,10 @@ class TimeXt(var value: Double, private var unit: Double) {
 
     val inMilliseconds: Double
         get() = this.value * this.unit / TimeXtUnit.millisecond
+
+    fun toYears(): TimeXt {
+        return TimeXt(this.inYears, TimeXtUnit.year)
+    }
 
     fun toWeeks(): TimeXt {
         return TimeXt(this.inWeeks, TimeXtUnit.week)

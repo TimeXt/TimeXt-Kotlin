@@ -6,9 +6,9 @@
 <a target="_blank" href="https://www.paypal.me/GuepardoApps" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
 
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
-[![Version](https://img.shields.io/badge/version-v0.3.1.181129-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.3.1)
+[![Version](https://img.shields.io/badge/version-v0.4.0.190128-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.4.0)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
-[![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-orange.svg)](timext)
+[![CodeCoverage](https://img.shields.io/badge/codeCoverage-61-orange.svg)](timext)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
@@ -37,6 +37,7 @@ val difference = date2 - date1
 
 ```kotlin
 // Type is TimeXt
+val threeYears = 3.years
 val oneWeek = 1.weeks
 val threeDays = 3.days
 val elevenHours = 11.hours
@@ -105,24 +106,24 @@ handler.postDelayed({
 If you would like to have your own timext unit, implement it as followed:
 
 ```kotlin
-val year: Double = 365 * 24 * 60 * 60 * 1e3
+val microsecond: Double = 1e-3
 
 // Add also some extensions:
-val Number.years: TimeXt
-    get() = TimeXt(this.toDouble(), year)
+val Number.microseconds: TimeXt
+    get() = TimeXt(this.toDouble(), microsecond)
 
-val TimeXt.inYears: TimeXt
-    get() = this.value * this.unit / year
+val TimeXt.inMicroseconds: TimeXt
+    get() = this.value * this.unit / microsecond
 
-fun toYears(): TimeXt {
-    return TimeXt(this.inYears, year)
+fun toMicroseconds(): TimeXt {
+    return TimeXt(this.inMicroseconds, microsecond)
 }
 
 // Use it like:
-val threeYears = TimeXt(3, year)
-val oneYear = 1.years
-val daysInYear = 365.days.inYears
-val yearsFromDays = 365.days.toYears()
+val threeMicroseconds = TimeXt(3, microsecond)
+val oneMicroseconds = 1.microseconds
+val secondInMicroseconds = 1.seconds.inMicroseconds
+val microsecondsFromMinutes = 1.minutes.toMicroseconds()
 
 ```
 
@@ -144,7 +145,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:v0.3.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:v0.4.0'
 }
 ```
 
@@ -152,7 +153,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:v0.3.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:v0.4.0'
 }
 ```
 

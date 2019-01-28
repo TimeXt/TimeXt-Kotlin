@@ -8,6 +8,11 @@ class TimeXtTests {
 
     @Test
     fun `All comparisons should work as expected`() {
+        assertEquals(2.years, 730.days)
+        assertTrue(3.years > 20.days)
+        assertTrue(0.5.years < 200.days)
+        assertNotEquals(2.years, 729.5.days)
+
         assertEquals(2.weeks, 14.days)
         assertTrue(3.weeks > 20.days)
         assertTrue(4.weeks < 29.days)
@@ -36,6 +41,7 @@ class TimeXtTests {
 
     @Test
     fun `All conversions should work as expected`() {
+        assertTrue(1.years.inDays == 365.0)
         assertTrue(4.weeks.inDays == 28.0)
         assertTrue(7.days.inWeeks == 1.0)
         assertTrue(2.5.days.inHours == 60.0)
@@ -50,6 +56,7 @@ class TimeXtTests {
 
     @Test
     fun `All casts should work as expected`() {
+        assertTrue(2.years.toDays() == 730.days)
         assertTrue(4.weeks.toDays() == 28.days)
         assertTrue(7.days.toWeeks() == 1.weeks)
         assertTrue(2.5.days.toHours() == 60.hours)
@@ -64,6 +71,7 @@ class TimeXtTests {
 
     @Test
     fun `Plus operator should work as expected`() {
+        assertTrue((1.years + 365.days) == 2.years)
         assertTrue((2.weeks + 7.days) == 3.weeks)
         assertTrue((2.5.days + 12.hours) == 3.days)
         assertTrue((2.25.hours + 45.minutes) == 3.hours)
@@ -73,6 +81,7 @@ class TimeXtTests {
 
     @Test
     fun `Minus operator should work as expected`() {
+        assertTrue((2.years - 365.days) == 1.years)
         assertTrue((2.weeks - 7.days) == 1.weeks)
         assertTrue((2.5.days - 12.hours) == 2.days)
         assertTrue((2.25.hours - 15.minutes) == 2.hours)
@@ -82,6 +91,7 @@ class TimeXtTests {
 
     @Test
     fun `Multiplication operator should work as expected`() {
+        assertTrue((1.years * 2.5) == 2.5.years)
         assertTrue((2.weeks * 2) == 4.weeks)
         assertTrue((2.5.days * 3) == 7.5.days)
         assertTrue((2.25.hours * 4) == 9.hours)
@@ -92,6 +102,7 @@ class TimeXtTests {
 
     @Test
     fun `Division operator should work as expected`() {
+        assertTrue((1.years / 5) == 0.2.years)
         assertTrue((2.weeks / 2) == 1.weeks)
         assertTrue((1.5.days / 3) == 0.5.days)
         assertTrue((4.hours / 4) == 1.hours)
@@ -102,6 +113,9 @@ class TimeXtTests {
 
     @Test
     fun `Increment operator should work as expected`() {
+        var actualYears = 2.years
+        assertTrue(++actualYears == 3.years)
+
         var actualWeeks = 2.weeks
         assertTrue(++actualWeeks == 3.weeks)
 
@@ -123,6 +137,9 @@ class TimeXtTests {
 
     @Test
     fun `Decrement operator should work as expected`() {
+        var actualYears = 2.years
+        assertTrue(--actualYears == 1.years)
+
         var actualWeeks = 2.weeks
         assertTrue(--actualWeeks == 1.weeks)
 
