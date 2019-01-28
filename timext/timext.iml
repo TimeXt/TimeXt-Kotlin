@@ -17,7 +17,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/classes/kotlin/main" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.10/71d0fa967493eb76648b575edf1762cb2d0c7f10/kotlin-stdlib-jdk8-1.3.10.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.10/4d147bf43060dc43d61b096e24da1e67dfe0c032/kotlin-stdlib-jdk7-1.3.10.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.10/b178c1501609c6e4ee8be635513cb023a466457d/kotlin-stdlib-1.3.10.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.10/1b19d99229dcedad7caf50534dce38fe82845269/kotlin-stdlib-common-1.3.10.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.11/dd9bff00d6cfca58b6c1fe89be8e0678e35cf35f/kotlin-stdlib-jdk8-1.3.11.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.11/4839661cf6ce3c14b65ed7dcf5b9249b44ecca16/kotlin-stdlib-jdk7-1.3.11.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.11/4cbc5922a54376018307a731162ccaf3ef851a39/kotlin-stdlib-1.3.11.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/d8b8e746e279f1c4f5e08bc14a96b82e6bb1de02/kotlin-stdlib-common-1.3.11.jar;C:/Users/Jonas/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="timext" />
@@ -31,6 +31,9 @@
           </option>
           <option name="pluginClasspaths">
             <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
           </option>
         </compilerArguments>
       </configuration>
@@ -52,10 +55,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-jdk8-1.3.10" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-jdk7-1.3.10" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-1.3.10" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-common-1.3.10" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-jdk8-1.3.11" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-jdk7-1.3.11" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-1.3.11" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-common-1.3.11" level="project" />
     <orderEntry type="library" exported="" name="Gradle: annotations-13.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-4.12" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
