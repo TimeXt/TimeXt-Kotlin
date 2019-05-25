@@ -23,47 +23,25 @@ class TimeXt(var value: Double, private var unit: Double) {
     val inMilliseconds: Double
         get() = this.value * this.unit / TimeXtUnit.millisecond
 
-    fun toYears(): TimeXt {
-        return TimeXt(this.inYears, TimeXtUnit.year)
-    }
+    fun toYears(): TimeXt = TimeXt(this.inYears, TimeXtUnit.year)
 
-    fun toWeeks(): TimeXt {
-        return TimeXt(this.inWeeks, TimeXtUnit.week)
-    }
+    fun toWeeks(): TimeXt = TimeXt(this.inWeeks, TimeXtUnit.week)
 
-    fun toDays(): TimeXt {
-        return TimeXt(this.inDays, TimeXtUnit.day)
-    }
+    fun toDays(): TimeXt = TimeXt(this.inDays, TimeXtUnit.day)
 
-    fun toHours(): TimeXt {
-        return TimeXt(this.inHours, TimeXtUnit.hour)
-    }
+    fun toHours(): TimeXt = TimeXt(this.inHours, TimeXtUnit.hour)
 
-    fun toMinutes(): TimeXt {
-        return TimeXt(this.inMinutes, TimeXtUnit.minute)
-    }
+    fun toMinutes(): TimeXt = TimeXt(this.inMinutes, TimeXtUnit.minute)
 
-    fun toSeconds(): TimeXt {
-        return TimeXt(this.inSeconds, TimeXtUnit.second)
-    }
+    fun toSeconds(): TimeXt = TimeXt(this.inSeconds, TimeXtUnit.second)
 
-    fun toMilliseconds(): TimeXt {
-        return TimeXt(this.inMilliseconds, TimeXtUnit.millisecond)
-    }
+    fun toMilliseconds(): TimeXt = TimeXt(this.inMilliseconds, TimeXtUnit.millisecond)
 
-    operator fun plus(timeXt: TimeXt): TimeXt {
-        val newValue = ((this.inMilliseconds + timeXt.inMilliseconds) / this.unit) * TimeXtUnit.millisecond
-        return TimeXt(newValue, this.unit)
-    }
+    operator fun plus(timeXt: TimeXt): TimeXt = TimeXt(((this.inMilliseconds + timeXt.inMilliseconds) / this.unit) * TimeXtUnit.millisecond, this.unit)
 
-    operator fun minus(timeXt: TimeXt): TimeXt {
-        val newValue = ((this.inMilliseconds - timeXt.inMilliseconds) / this.unit) * TimeXtUnit.millisecond
-        return TimeXt(newValue, this.unit)
-    }
+    operator fun minus(timeXt: TimeXt): TimeXt = TimeXt(((this.inMilliseconds - timeXt.inMilliseconds) / this.unit) * TimeXtUnit.millisecond, this.unit)
 
-    operator fun times(timesValue: Number): TimeXt {
-        return TimeXt(value * timesValue.toDouble(), this.unit)
-    }
+    operator fun times(timesValue: Number): TimeXt = TimeXt(value * timesValue.toDouble(), this.unit)
 
     operator fun div(divValue: Number): TimeXt {
         if (divValue == 0) {
@@ -80,12 +58,12 @@ class TimeXt(var value: Double, private var unit: Double) {
 
     operator fun contains(compareTimeXt: TimeXt) = inMilliseconds >= compareTimeXt.inMilliseconds
 
-    override operator fun equals(other: Any?): Boolean {
-        if (other == null || other !is TimeXt) {
-            return false
-        }
-        return compareTo(other) == 0
-    }
+    override operator fun equals(other: Any?): Boolean =
+            if (other == null || other !is TimeXt) {
+                false
+            } else {
+                compareTo(other) == 0
+            }
 
     override fun hashCode() = inMilliseconds.hashCode()
 }

@@ -4,7 +4,7 @@
 [![API](https://img.shields.io/badge/API-14+-blue.svg)](https://android-arsenal.com/api?level=14)
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
 
-[![Version](https://img.shields.io/badge/version-v0.5.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.5.0)
+[![Version](https://img.shields.io/badge/version-v0.5.1-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.5.1)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
 [![CodeCoverage](https://img.shields.io/badge/codeCoverage-64-orange.svg)](timext)
 
@@ -156,7 +156,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.5.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.5.1'
 }
 ```
 
@@ -164,7 +164,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.5.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.5.1'
 }
 ```
 
