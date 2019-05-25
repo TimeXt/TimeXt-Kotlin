@@ -4,9 +4,9 @@
 [![API](https://img.shields.io/badge/API-14+-blue.svg)](https://android-arsenal.com/api?level=14)
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
 
-[![Version](https://img.shields.io/badge/version-v0.4.1-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/v0.4.1)
+[![Version](https://img.shields.io/badge/version-v0.5.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.5.0)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
-[![CodeCoverage](https://img.shields.io/badge/codeCoverage-61-orange.svg)](timext)
+[![CodeCoverage](https://img.shields.io/badge/codeCoverage-64-orange.svg)](timext)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Paypal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
@@ -103,6 +103,15 @@ handler.postDelayed({
 }, 2.minutes)
 ```
 
+Since version 0.5.0 TimeXt has new extensions for the long type to display this number value in a human readable string format.
+
+```kotlin
+val readableStringFromMilliseconds = 34325055574.formatMilliseconds // 56 weeks, 5 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds
+val readableStringFromSeconds = 4350554L.formatSeconds // 7 weeks, 1 day, 8 hours, 29 minutes, 14 seconds
+val readableStringFromMinutes = 432555L.formatMinutes // 42 weeks, 6 days, 9 hours, 15 minutes
+val readableStringFromHours = 4574L.formatHours // 27 weeks, 1 day, 14 hours
+```
+
 ### Custom TimeXtUnit
 
 If you would like to have your own timext unit, implement it as followed:
@@ -147,7 +156,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:v0.4.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.5.0'
 }
 ```
 
@@ -155,7 +164,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:v0.4.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.5.0'
 }
 ```
 
@@ -166,3 +175,27 @@ dependencies {
 ## License
 
 TimeXt-Kotlin is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
+
+```
+MIT License
+
+Copyright (c) 2018 - 2019 GuepardoApps (Jonas Schubert)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
