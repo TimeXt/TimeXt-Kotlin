@@ -4,12 +4,12 @@ import com.github.guepardoapps.timext.kotlin.TimeXt
 import com.github.guepardoapps.timext.kotlin.TimeXtUnit
 
 operator fun java.sql.Date.plus(timeXt: TimeXt): java.sql.Date {
-    this.time += timeXt.inMilliseconds.toLong()
+    this.time += timeXt.inMillis.toLong()
     return this
 }
 
 operator fun java.sql.Date.minus(timeXt: TimeXt): java.sql.Date {
-    this.time -= timeXt.inMilliseconds.toLong()
+    this.time -= timeXt.inMillis.toLong()
     return this
 }
 
@@ -19,12 +19,12 @@ operator fun java.sql.Date.minus(date: java.sql.Date): TimeXt {
 }
 
 operator fun java.util.Date.plus(timeXt: TimeXt): java.util.Date {
-    this.time += timeXt.inMilliseconds.toLong()
+    this.time += timeXt.inMillis.toLong()
     return this
 }
 
 operator fun java.util.Date.minus(timeXt: TimeXt): java.util.Date {
-    this.time -= timeXt.inMilliseconds.toLong()
+    this.time -= timeXt.inMillis.toLong()
     return this
 }
 

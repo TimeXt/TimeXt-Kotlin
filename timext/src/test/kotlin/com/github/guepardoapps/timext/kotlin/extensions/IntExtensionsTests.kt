@@ -3,15 +3,15 @@ package com.github.guepardoapps.timext.kotlin.extensions
 import org.junit.Assert.*
 import org.junit.Test
 
-class LongExtensionsTests {
+class IntExtensionsTests {
 
     @Test
     fun `formatMilliseconds should work as expected`() {
         // Arrange
-        val expected = "56 weeks, 5 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds"
+        val expected = "3 seconds, 650 milliseconds"
 
         // Act
-        val actual = 34325055574.formatMillis
+        val actual = 3650.formatMillis
 
         // Assert
         assertEquals(expected, actual)
@@ -20,10 +20,10 @@ class LongExtensionsTests {
     @Test
     fun `formatSeconds should work as expected`() {
         // Arrange
-        val expected = "7 weeks, 1 day, 8 hours, 29 minutes, 14 seconds"
+        val expected = "16 minutes, 15 seconds"
 
         // Act
-        val actual = 4350554L.formatSeconds
+        val actual = 975.formatSeconds
 
         // Assert
         assertEquals(expected, actual)
@@ -32,10 +32,10 @@ class LongExtensionsTests {
     @Test
     fun `formatMinutes should work as expected`() {
         // Arrange
-        val expected = "42 weeks, 6 days, 9 hours, 15 minutes"
+        val expected = "7 hours, 24 minutes"
 
         // Act
-        val actual = 432555L.formatMinutes
+        val actual = 444.formatMinutes
 
         // Assert
         assertEquals(expected, actual)
@@ -44,10 +44,10 @@ class LongExtensionsTests {
     @Test
     fun `formatHours should work as expected`() {
         // Arrange
-        val expected = "27 weeks, 1 day, 14 hours"
+        val expected = "2 days, 12 hours"
 
         // Act
-        val actual = 4574L.formatHours
+        val actual = 60.formatHours
 
         // Assert
         assertEquals(expected, actual)
@@ -56,10 +56,10 @@ class LongExtensionsTests {
     @Test
     fun `formatDays should work as expected`() {
         // Arrange
-        val expected = "2 weeks, 3 days"
+        val expected = "2 weeks, 4 days"
 
         // Act
-        val actual = 17L.formatDays
+        val actual = 18.formatDays
 
         // Assert
         assertEquals(expected, actual)

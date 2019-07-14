@@ -20,7 +20,7 @@ class TimeXt(var value: Double, private var unit: Double) {
     val inSeconds: Double
         get() = this.value * this.unit / TimeXtUnit.second
 
-    val inMilliseconds: Double
+    val inMillis: Double
         get() = this.value * this.unit / TimeXtUnit.millisecond
 
     fun toYears(): TimeXt = TimeXt(this.inYears, TimeXtUnit.year)
@@ -35,11 +35,11 @@ class TimeXt(var value: Double, private var unit: Double) {
 
     fun toSeconds(): TimeXt = TimeXt(this.inSeconds, TimeXtUnit.second)
 
-    fun toMilliseconds(): TimeXt = TimeXt(this.inMilliseconds, TimeXtUnit.millisecond)
+    fun toMillis(): TimeXt = TimeXt(this.inMillis, TimeXtUnit.millisecond)
 
-    operator fun plus(timeXt: TimeXt): TimeXt = TimeXt(((this.inMilliseconds + timeXt.inMilliseconds) / this.unit) * TimeXtUnit.millisecond, this.unit)
+    operator fun plus(timeXt: TimeXt): TimeXt = TimeXt(((this.inMillis + timeXt.inMillis) / this.unit) * TimeXtUnit.millisecond, this.unit)
 
-    operator fun minus(timeXt: TimeXt): TimeXt = TimeXt(((this.inMilliseconds - timeXt.inMilliseconds) / this.unit) * TimeXtUnit.millisecond, this.unit)
+    operator fun minus(timeXt: TimeXt): TimeXt = TimeXt(((this.inMillis - timeXt.inMillis) / this.unit) * TimeXtUnit.millisecond, this.unit)
 
     operator fun times(timesValue: Number): TimeXt = TimeXt(value * timesValue.toDouble(), this.unit)
 
@@ -54,9 +54,9 @@ class TimeXt(var value: Double, private var unit: Double) {
 
     operator fun dec() = TimeXt(value - 1, this.unit)
 
-    operator fun compareTo(compareTimeXt: TimeXt) = inMilliseconds.compareTo(compareTimeXt.inMilliseconds)
+    operator fun compareTo(compareTimeXt: TimeXt) = inMillis.compareTo(compareTimeXt.inMillis)
 
-    operator fun contains(compareTimeXt: TimeXt) = inMilliseconds >= compareTimeXt.inMilliseconds
+    operator fun contains(compareTimeXt: TimeXt) = inMillis >= compareTimeXt.inMillis
 
     override operator fun equals(other: Any?): Boolean =
             if (other == null || other !is TimeXt) {
@@ -65,5 +65,5 @@ class TimeXt(var value: Double, private var unit: Double) {
                 compareTo(other) == 0
             }
 
-    override fun hashCode() = inMilliseconds.hashCode()
+    override fun hashCode() = inMillis.hashCode()
 }

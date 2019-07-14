@@ -2,16 +2,16 @@ package com.github.guepardoapps.timext.kotlin.extensions
 
 import kotlin.math.floor
 
-private val map: Map<String, Pair<Long, Int>> = mapOf(
-        "week" to Pair(7 * 24 * 60 * 60 * 1000L, Int.MAX_VALUE),
-        "day" to Pair(24 * 60 * 60 * 1000L, 7),
-        "hour" to Pair(60 * 60 * 1000L, 24),
-        "minute" to Pair(60 * 1000L, 60),
-        "second" to Pair(1000L, 60),
-        "millisecond" to Pair(1L, 1000)
+private val map: Map<String, Pair<Int, Int>> = mapOf(
+        "week" to Pair(7 * 24 * 60 * 60 * 1000, Int.MAX_VALUE),
+        "day" to Pair(24 * 60 * 60 * 1000, 7),
+        "hour" to Pair(60 * 60 * 1000, 24),
+        "minute" to Pair(60 * 1000, 60),
+        "second" to Pair(1000, 60),
+        "millisecond" to Pair(1, 1000)
 )
 
-private fun format(value: Long, divider: Double): List<String> {
+private fun format(value: Int, divider: Double): List<String> {
     return map
             .mapValues { Pair((it.value.first / divider), it.value.second) }
             .map { item ->
@@ -20,31 +20,31 @@ private fun format(value: Long, divider: Double): List<String> {
             .filter { x -> x.isNotEmpty() && !x.startsWith("0") }
 }
 
-val Long.formatMillis: String
+val Int.formatMillis: String
     get() {
         val stringArray = format(this, 1.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else "0 millisecond"
     }
 
-val Long.formatSeconds: String
+val Int.formatSeconds: String
     get() {
         val stringArray = format(this, 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 1000).formatMillis
     }
 
-val Long.formatMinutes: String
+val Int.formatMinutes: String
     get() {
         val stringArray = format(this, 60 * 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 60).formatSeconds
     }
 
-val Long.formatHours: String
+val Int.formatHours: String
     get() {
         val stringArray = format(this, 60 * 60 * 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 60).formatMinutes
     }
 
-val Long.formatDays: String
+val Int.formatDays: String
     get() {
         val stringArray = format(this, 24 * 60 * 60 * 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 60).formatHours

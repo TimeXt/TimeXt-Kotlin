@@ -4,9 +4,9 @@
 [![API](https://img.shields.io/badge/API-14+-blue.svg)](https://android-arsenal.com/api?level=14)
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
 
-[![Version](https://img.shields.io/badge/version-0.5.1-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.5.1)
+[![Version](https://img.shields.io/badge/version-0.6.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.6.0)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
-[![CodeCoverage](https://img.shields.io/badge/codeCoverage-64-orange.svg)](timext)
+[![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-yellow.svg)](timext)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Paypal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
@@ -45,9 +45,9 @@ val threeDays = 3.days
 val elevenHours = 11.hours
 val sixMinutes = 6.minutes
 val fiftySeconds = 50.seconds
-val hundredMilliseconds = 100.milliseconds
+val hundredMillis = 100.millis
 
-val oneDayInMillis = 1.days.inMilliSeconds  // Returns one day in milliseconds
+val oneDayInMillis = 1.days.inMillis        // Returns one day in milliseconds
 val twoWeeksInHours = 2.weeks.inHours       // Returns two weeks in hours
 
 // Converts the existing 3h-Class into a 180min-Class
@@ -55,7 +55,7 @@ val threeHoursToMinutes = 3.hours.toMinutes()
 // 3.hours === TimeXt(3, TimeXtUnit.hour)
 // 180.minutes === TimeXt(180, TimeXtUnit.minute)
 
-val duration = 1.days + 11.hours + 35.minutes + 15.seconds - 250.milliseconds
+val duration = 1.days + 11.hours + 35.minutes + 15.seconds - 250.millis
 val multipliedDuration = 1.5 * duration
 val dividedDuration = duration / 2
 
@@ -104,12 +104,14 @@ handler.postDelayed({
 ```
 
 Since version 0.5.0 TimeXt has new extensions for the long type to display this number value in a human readable string format.
+Since version 0.6.0 TimeXt supports double and integer numbers.
 
 ```kotlin
-val readableStringFromMilliseconds = 34325055574.formatMilliseconds // 56 weeks, 5 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds
+val readableStringFromMilliseconds = 34325055574.formatMillis // 56 weeks, 5 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds
 val readableStringFromSeconds = 4350554L.formatSeconds // 7 weeks, 1 day, 8 hours, 29 minutes, 14 seconds
 val readableStringFromMinutes = 432555L.formatMinutes // 42 weeks, 6 days, 9 hours, 15 minutes
-val readableStringFromHours = 4574L.formatHours // 27 weeks, 1 day, 14 hours
+val readableStringFromHours = 24.formatHours // 21 day
+val readableStringFromDays = 7.5.formatDays // 1 week, 12 hours
 ```
 
 ### Custom TimeXtUnit
@@ -156,7 +158,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.5.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.6.0'
 }
 ```
 
@@ -164,8 +166,8 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.5.1'
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.5.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.6.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.6.0'
 }
 ```
 

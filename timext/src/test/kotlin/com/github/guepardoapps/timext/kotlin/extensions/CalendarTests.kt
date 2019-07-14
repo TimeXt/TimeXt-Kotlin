@@ -42,6 +42,6 @@ class CalendarTests {
 
         val actual = calendar1 - calendar2
 
-        assertEquals(1.weeks.inMilliseconds, actual.value, 1.0)
+        assertEquals(1.weeks.inMillis, actual.value, 1.0)
     }
 }

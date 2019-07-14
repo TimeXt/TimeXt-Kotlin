@@ -21,5 +21,5 @@ val Number.minutes: TimeXt
 val Number.seconds: TimeXt
     get() = TimeXt(this.toDouble(), TimeXtUnit.second)
 
-val Number.milliseconds: TimeXt
+val Number.millis: TimeXt
     get() = TimeXt(this.toDouble(), TimeXtUnit.millisecond)

@@ -6,7 +6,7 @@ import java.util.*
 
 operator fun Calendar.plus(timeXt: TimeXt): Calendar {
     val newCalendar = clone() as Calendar
-    newCalendar.timeInMillis += timeXt.inMilliseconds.toLong()
+    newCalendar.timeInMillis += timeXt.inMillis.toLong()
     return newCalendar
 }
 

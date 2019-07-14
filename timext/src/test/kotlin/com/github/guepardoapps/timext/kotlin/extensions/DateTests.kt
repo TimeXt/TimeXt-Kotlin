@@ -38,7 +38,7 @@ class DateTests {
 
         val expected = 1.hours
 
-        assertEquals(expected.inMilliseconds, actual.value, 1.0)
+        assertEquals(expected.inMillis, actual.value, 1.0)
     }
 
     @Test
@@ -74,6 +74,6 @@ class DateTests {
 
         val expected = 1.hours
 
-        assertEquals(expected.inMilliseconds, actual.value, 1.0)
+        assertEquals(expected.inMillis, actual.value, 1.0)
     }
 }
