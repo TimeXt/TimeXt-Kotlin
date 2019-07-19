@@ -47,5 +47,11 @@ val Int.formatHours: String
 val Int.formatDays: String
     get() {
         val stringArray = format(this, 24 * 60 * 60 * 1000.0)
-        return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 60).formatHours
+        return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 24).formatHours
+    }
+
+val Int.formatWeeks: String
+    get() {
+        val stringArray = format(this, 7 * 24 * 60 * 60 * 1000.0)
+        return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 7).formatDays
     }

@@ -64,4 +64,16 @@ class LongExtensionsTests {
         // Assert
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun `formatWeeks should work as expected`() {
+        // Arrange
+        val expected = "2 weeks"
+
+        // Act
+        val actual = 2L.formatWeeks
+
+        // Assert
+        assertEquals(expected, actual)
+    }
 }
