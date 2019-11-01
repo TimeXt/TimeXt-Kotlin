@@ -4,7 +4,7 @@
 [![API](https://img.shields.io/badge/API-14+-blue.svg)](https://android-arsenal.com/api?level=14)
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
 
-[![Version](https://img.shields.io/badge/version-0.6.1-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.6.1)
+[![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.6.1)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
 [![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-yellow.svg)](timext)
 
@@ -37,6 +37,8 @@ val difference = date2 - date1
 
 ```kotlin
 // Type is TimeXt
+val fiveCenturies = 5.centuries
+val tenDecades = 10.decades
 val threeYears = 3.years
 val oneWeek = 1.weeks
 val threeDays = 3.days
@@ -158,7 +160,7 @@ Add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.6.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.7.0'
 }
 ```
 
@@ -166,14 +168,20 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.6.1'
-    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.6.1'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext:0.7.0'
+    implementation 'com.github.TimeXt.TimeXt-Kotlin:timext-android:0.7.0'
 }
 ```
 
 ## Requirements
 
 - Use at least JVM 1.8
+
+## Contributors
+
+| [<img alt="GuepardoApps" src="https://avatars0.githubusercontent.com/u/21952813?v=4&s=117" width="117"/>](https://github.com/GuepardoApps) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+| [GuepardoApps](https://github.com/GuepardoApps) |
 
 ## License
 

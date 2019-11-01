@@ -2,6 +2,12 @@ package com.github.guepardoapps.timext.kotlin
 
 class TimeXt(var value: Double, private var unit: Double) {
 
+    val inCenturies: Double
+        get() = this.value * this.unit / TimeXtUnit.century
+
+    val inDecades: Double
+        get() = this.value * this.unit / TimeXtUnit.decade
+
     val inYears: Double
         get() = this.value * this.unit / TimeXtUnit.year
 
@@ -22,6 +28,10 @@ class TimeXt(var value: Double, private var unit: Double) {
 
     val inMillis: Double
         get() = this.value * this.unit / TimeXtUnit.millisecond
+
+    fun toCenturies(): TimeXt = TimeXt(this.inCenturies, TimeXtUnit.century)
+
+    fun toDecades(): TimeXt = TimeXt(this.inDecades, TimeXtUnit.decade)
 
     fun toYears(): TimeXt = TimeXt(this.inYears, TimeXtUnit.year)
 

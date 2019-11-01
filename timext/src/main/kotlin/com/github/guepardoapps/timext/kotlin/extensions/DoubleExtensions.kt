@@ -3,9 +3,9 @@ package com.github.guepardoapps.timext.kotlin.extensions
 import kotlin.math.floor
 
 private val map: Map<String, Pair<Double, Int>> = mapOf(
-        "week" to Pair(7 * 24 * 60 * 60 * 1000.0, Int.MAX_VALUE),
-        "day" to Pair(24 * 60 * 60 * 1000.0, 7),
-        "hour" to Pair(60 * 60 * 1000.0, 24),
+        "week" to Pair(604800 * 1000.0, Int.MAX_VALUE),
+        "day" to Pair(86400 * 1000.0, 7),
+        "hour" to Pair(3600 * 1000.0, 24),
         "minute" to Pair(60 * 1000.0, 60),
         "second" to Pair(1000.0, 60),
         "millisecond" to Pair(1.0, 1000)
@@ -40,18 +40,18 @@ val Double.formatMinutes: String
 
 val Double.formatHours: String
     get() {
-        val stringArray = format(this, 60 * 60 * 1000.0)
+        val stringArray = format(this, 3600 * 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 60).formatMinutes
     }
 
 val Double.formatDays: String
     get() {
-        val stringArray = format(this, 24 * 60 * 60 * 1000.0)
+        val stringArray = format(this, 86400 * 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 24).formatHours
     }
 
 val Double.formatWeeks: String
     get() {
-        val stringArray = format(this, 7 * 24 * 60 * 60 * 1000.0)
+        val stringArray = format(this, 604800 * 1000.0)
         return if (stringArray.isNotEmpty()) stringArray.joinToString(", ") else (this * 7).formatDays
     }
