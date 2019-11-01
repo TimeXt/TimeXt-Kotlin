@@ -4,7 +4,7 @@
 [![API](https://img.shields.io/badge/API-14+-blue.svg)](https://android-arsenal.com/api?level=14)
 [![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
 
-[![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.6.1)
+[![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.7.0)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
 [![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-yellow.svg)](timext)
 
