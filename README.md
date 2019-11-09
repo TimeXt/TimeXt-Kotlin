@@ -6,7 +6,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.7.0)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
-[![CodeCoverage](https://img.shields.io/badge/codeCoverage-71-yellow.svg)](timext)
+[![Coverage](https://img.shields.io/badge/coverage-71%25-yellow.svg)](timext)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Paypal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
