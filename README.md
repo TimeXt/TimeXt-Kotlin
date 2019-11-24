@@ -2,19 +2,29 @@
 	<img width="90" src="logo.png" alt="timext">
 </h1>
 
-# TimeXt-Kotlin
+<p align="center"><h1 style="text-align: center;">TimeXt-Kotlin</h1></p>
 
-[![Platform](https://img.shields.io/badge/platform-Android-blue.svg)](https://www.android.com)
-[![API](https://img.shields.io/badge/API-14+-blue.svg)](https://android-arsenal.com/api?level=14)
-[![](https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg)](https://jitpack.io/#TimeXt/TimeXt-Kotlin)
+<p align="center">
+  <a href="https://jitpack.io/#TimeXt/TimeXt-Kotlin"><img src="https://jitpack.io/v/TimeXt/TimeXt-Kotlin.svg"/></a>
+  <a href="https://www.android.com"><img src="https://img.shields.io/badge/platform-Android-blue.svg"/></a>
+  <a href="https://android-arsenal.com/api?level=14"><img src="https://img.shields.io/badge/API-14+-blue.svg"/></a>
+  <a href="https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.7.0"><img src="https://img.shields.io/badge/version-0.7.0-blue.svg"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"/></a>
+  <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
+  <a href="https://github.com/TimeXt/timext-Dart/"><img src="https://img.shields.io/github/stars/TimeXt/timext-Dart.svg"/></a>
+</p>
 
-[![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)](https://github.com/TimeXt/TimeXt-Kotlin/releases/tag/0.7.0)
-[![Build](https://img.shields.io/badge/build-success-green.svg)](timext)
-[![Coverage](https://img.shields.io/badge/coverage-71%25-yellow.svg)](timext)
+<p align="center"><h6 style="text-align: center;">Unit test coverage</h6></p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Paypal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+<p align="center">
+  <a href="./timext"><img src="https://img.shields.io/badge/coverage-71%25-yellow.svg"/></a>
+</p>
+
+<p align="center"><h6 style="text-align: center;">Support me</h6></p>
+
+<p align="center">
+  <a href="https://www.paypal.me/GuepardoApps"><img src="https://img.shields.io/badge/paypal-support-blue.svg"/></a>
+</p>
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
